@@ -5,7 +5,7 @@
       "fileMatch": ["build.gradle.kts"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "compileOnly\\(\"(?<depName>.*):(?<currentValue>.*)\"\\) //(?<versioning>.*)"
+        "compileOnly\\(\"(?<depName>.*):(?<currentValue>.*)\"\\) // (?<versioning>.*)"
       ],
       "datasourceTemplate": "docker"
     }
