@@ -7,7 +7,7 @@
       "matchStrings": [
         "compileOnly\\(\"(?<depName>.*):(?<currentValue>.*)\"\\)"
       ],
-     "datasourceTemplate": "docker",
+      "datasourceTemplate": "docker"
     }
   ]
 }
