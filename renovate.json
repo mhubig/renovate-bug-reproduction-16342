@@ -1,20 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "packageRules": [
+  "regexManagers": [
     {
-      "matchManagers": ["gradle"],
-      "matchPackagePatterns": ["classpath(com.example.foo:tool-types.*)"],
-      "versioning": "regex:^\\d+-\\d+-\\d+_(?<patch>\\d+)$"
-    },
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "automerge": true,
-      "gitLabAutomerge": true
+      "fileMatch": ["build.gradle.kts"],
+      "matchStringsStrategy": "any",
+      "matchStrings": [
+        "compileOnly\\(\"(?<packageName>.*):(?<currentValue>.*)\"\\)"
+      ]
     }
   ]
 }
