@@ -5,10 +5,9 @@
       "fileMatch": ["build.gradle.kts"],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "compileOnly\\(\"(?<packageName>.*):(?<currentValue>.*)\"\\)"
+        "compileOnly\\(\"(?<depName>.*):(?<currentValue>.*)\"\\)"
       ],
-      datasourceTemplate: "",
-      depNameTemplate: "",
+     "datasourceTemplate": "gradle",
     }
   ]
 }
