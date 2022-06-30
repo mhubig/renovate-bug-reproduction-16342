@@ -6,7 +6,9 @@
       "matchStringsStrategy": "any",
       "matchStrings": [
         "compileOnly\\(\"(?<packageName>.*):(?<currentValue>.*)\"\\)"
-      ]
+      ],
+      datasourceTemplate: "",
+      depNameTemplate: "",
     }
   ]
 }
