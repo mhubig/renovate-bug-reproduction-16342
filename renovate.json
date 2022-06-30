@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "matchManagers": ["gradle"],
-      "matchPackagePatterns": [".*com.example.foo:tool-types.*"],
+      "matchPackagePatterns": ["classpath(com.example.foo:tool-types.*)"],
       "versioning": "regex:^\\d+-\\d+-\\d+_(?<patch>\\d+)$"
     },
     {
