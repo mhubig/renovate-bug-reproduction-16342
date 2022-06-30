@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": ["com.example.foo:tool-types"],
+      "matchManagers": ["gradle"],
+      "matchPackagePatterns": [".*com.example.foo:tool-types.*"],
       "versioning": "regex:^\\d+-\\d+-\\d+_(?<patch>\\d+)$"
     },
     {
