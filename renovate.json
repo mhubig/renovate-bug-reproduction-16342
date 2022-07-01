@@ -1,13 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "regexManagers": [
+  "packageRules": [
     {
-      "fileMatch": ["build.gradle.kts"],
-      "matchStringsStrategy": "any",
-      "matchStrings": [
-        "compileOnly\\(\"(?<depName>.*):(?<currentValue>.*)\"\\) // (?<versioning>.*)"
+      "matchPackageNames": ["com.example.foo:tool-types"],
+      "versioning": "regex:^\\d+-\\d+-\\d+_(?<patch>\\d+)$"
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
       ],
-      "datasourceTemplate": "maven"
+      "automerge": true,
+      "gitLabAutomerge": true
     }
   ]
 }
