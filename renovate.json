@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": ["com.example.foo:tool-types"],
+      "matchPackageNames": ["com.example.foo:tool-types-2"],
       "versioning": "regex:^\\d+-\\d+-\\d+_(?<patch>\\d+)$"
     }
   ]
