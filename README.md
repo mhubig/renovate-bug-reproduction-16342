@@ -1,6 +1,6 @@
-# This repo reproduces renovate bug #16342
+# This repo reproduces renovate bug renovatebot/renovate#16342
 
-To reproduce #16342 clone this repo an run:
+To reproduce renovatebot/renovate#16342 clone this repo an run:
 
 ```shell
 export RENOVATE_TOKEN=xxxxxxxx
