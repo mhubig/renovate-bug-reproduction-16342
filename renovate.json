@@ -4,16 +4,6 @@
     {
       "matchPackageNames": ["com.example.foo:tool-types"],
       "versioning": "regex:^\\d+-\\d+-\\d+_(?<patch>\\d+)$"
-    },
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "automerge": true,
-      "gitLabAutomerge": true
     }
   ]
 }
